@@ -46,6 +46,7 @@
 
 
  <script type="text/javascript">
+
       google.load("visualization", "1", {packages:["gauge"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
@@ -61,14 +62,6 @@
           ["Department G", 0],
           ["Department H", 0]
         ]);
-
-    var json = $.get('/json/simple.json').always(function(response) {
-console.log(response.responseText);
-$('.content').append(response.responseText);
-
-});
-
-
 
         var dataTrue = google.visualization.arrayToDataTable([
           ['Label', 'Value'],
