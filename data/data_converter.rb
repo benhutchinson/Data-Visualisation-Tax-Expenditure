@@ -18,7 +18,7 @@ end
 jsn = []
 
 data.each do |key, value|
-  jsn << {:department =>key, :spend => value}
+  jsn << {:department =>key.gsub('\\"', ''), :spend => value}
 end
 
 doc = []
