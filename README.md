@@ -29,11 +29,11 @@ There are plenty of examples on the D3.js web-site, but we thought the following
 ###Lessons Learned
 * Initiative.  There was a lot of data available from [data.gov.uk](http://data.gov.uk) and in a short-project, a lot of time can be easily wasted without direction.  Chris on our team contacted  Camille Baldock from gov.uk](https://github.com/camilleldn) who gave us a talk and she pointed us towards gist.  Ideas & initiative are worth their weight in gold.
 
-[embed the image camille.jpg]
+![Camille's Help]('public/images/camille.png')
 
 * How much new technology do you need to absorb?  The core of this project involved learning about data visualisation technologies and we just needed to link data to javascript via a simple view.  Time was wasted appraising new frameworks that offered little beyond what we already knew, struggling to integrate them, and alienating half the team.
 * Schoolboy errors.  Even small inefficiencies such as team members coming in at different times cost us a lot of dead time.  
 
 ###Libraries
-[D3.js](http://d3js.org)
-[Google Charts](https://developers.google.com/chart/interactive/docs/gallery)
+* [D3.js](http://d3js.org)
+* [Google Charts](https://developers.google.com/chart/interactive/docs/gallery)
