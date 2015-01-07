@@ -29,7 +29,9 @@ There are plenty of examples on the D3.js web-site, but we thought the following
 ###Lessons Learned
 
 
-* d3 ; struggled with negative on one library.  hence scope of project morphs to those that have net expenditure at aggregate level.
+* d3 ; struggled with negative on one library.  hence scope of project morphs to those that have net expenditure at aggregate level.................
+* google gauge: All code and data are processed and rendered in the browser. No data is sent to any server.
+wouldn't handle json
 
 * Initiative.  There was a lot of data available from [data.gov.uk](http://data.gov.uk) and in a short-project, a lot of time can be easily wasted without direction.  Chris on our team contacted  Camille Baldock from gov.uk](https://github.com/camilleldn) who gave us a talk and she pointed us towards gist.  Ideas & initiative are worth their weight in gold.
 
