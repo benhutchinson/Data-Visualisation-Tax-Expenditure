@@ -1,27 +1,27 @@
 require 'CSV'
+require 'json'
 
 
-data = []
-has = 
+data = {}
 
-CSV.foreach('oscar.csv') do |row|
-  for i in data
-    has << i.keys[0]
-  end
-  if row[16].nil?
 
-  elsif (kinda_json.keys.include?(row[4]))
-    kinda_json[row[4]] = kinda_json[row[4]] + row[16].gsub(',','').to_i
+CSV.foreach('new2.csv') do |row|
+  if row[2] == 'Amount'
+
+  elsif data.keys.include?row[0]
+    data[row[0]] += row[2].to_i
   else
-    data << {'Department' => row[4], 
-      'total' => row[16].gsub(',','').to_i, 
-      {
-        'sub-department' => row[1], 
-        'sub-total' => row[16].gsub(',','').to_i
-        }}
+    data[row[0]] = row[2].to_i
   end
 end
 
+jsn = []
+
+data.each do |key, value|
+  jsn << {:department =>key, :spend => value}
+end
 
 
-
+jsn.each do |hash|
+  puts hash.to_json
+end
