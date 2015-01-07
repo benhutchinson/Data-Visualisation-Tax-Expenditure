@@ -21,7 +21,10 @@ data.each do |key, value|
   jsn << {:department =>key, :spend => value}
 end
 
+doc = []
 
 jsn.each do |hash|
-  puts hash.to_json
+  doc << hash.to_json
 end
+
+puts doc.to_json
