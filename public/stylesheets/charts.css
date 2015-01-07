@@ -4,7 +4,7 @@ body {
 
 .chart #circles .circle circle {
   stroke: #ffffff;
-  fill: #06c377;
+  fill: #c75a01;
 }
 
 .chart #circles text {
@@ -16,4 +16,9 @@ body {
 
 #chart-div {
   margin-top: 10%;
+}
+
+#total circle {
+  stroke: #ffffff;
+  fill: #c67203;
 }
