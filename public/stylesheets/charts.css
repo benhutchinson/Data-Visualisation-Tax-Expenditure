@@ -1,6 +1,6 @@
 .chart #circles .circle circle {
   stroke: #ffffff;
-  fill: #06c377;
+  fill: #c75a01;
 }
 
 .chart #circles text {
@@ -8,4 +8,9 @@
   color: #06c377;
   stroke: none;
   text-transform: uppercase;
+}
+
+#total circle {
+  stroke: #ffffff;
+  fill: #c67203;
 }
