@@ -1,3 +1,7 @@
+body {
+  margin-top: 0%;
+}
+
 .chart #circles .circle circle {
   stroke: #ffffff;
   fill: #06c377;
@@ -8,4 +12,8 @@
   color: #06c377;
   stroke: none;
   text-transform: uppercase;
+}
+
+#chart-div {
+  margin-top: 10%;
 }

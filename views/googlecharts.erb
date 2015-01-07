@@ -1,0 +1,103 @@
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<script type="text/javascript">
+
+      // Load the Visualization API and the piechart package.
+      google.load('visualization', '1.0', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Department');
+        data.addColumn('number', 'Expense');
+        data.addRows([
+
+        ["Department A", 30],
+        ["Department B", 40],
+        ["Department C", 50],
+        ["Department D", 10],
+        ["Department E", 50],
+        ["Department F", 50],
+        ["Department G", 25],
+        ["Department H", 10]
+
+        ]);
+
+        var w = 0.5*(Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
+        var h = 0.5*(Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
+        // Set chart options
+        var options = {'title':'How Much Government Departments Spend',
+                       'width':w,
+                       'height':h,
+                       'is3D':true};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+
+
+ <script type="text/javascript">
+      google.load("visualization", "1", {packages:["gauge"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Label', 'Value'],
+          ["Department A", 0],
+          ["Department B", 0],
+          ["Department C", 0],
+          ["Department D", 0],
+          ["Department E", 0],
+          ["Department F", 0],
+          ["Department G", 0],
+          ["Department H", 0]
+        ]);
+
+        var dataTrue = google.visualization.arrayToDataTable([
+          ['Label', 'Value'],
+          ["Department A", 30],
+          ["Department B", 40],
+          ["Department C", 50],
+          ["Department D", 10],
+          ["Department E", 50],
+          ["Department F", 50],
+          ["Department G", 25],
+          ["Department H", 10]
+        ]);
+
+        var options = {
+          width: 1200, height: 500,
+          redFrom: 90, redTo: 100,
+          yellowFrom:75, yellowTo: 90,
+          minorTicks: 5,
+          animation:{
+            duration: 2000,
+            easing: 'linear',
+           }
+        };
+
+        var chart = new google.visualization.Gauge(document.getElementById('gauge'));
+
+        chart.draw(data, options);
+
+        setInterval(function() {
+          chart.draw(dataTrue, options);
+        }, 10000);
+      }
+    </script>
+
+
+
+   <div id="chart_div"></div>
+
+
+   <div id="gauge" style="width: 1200px; height: 500px;"></div>
