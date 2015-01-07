@@ -7,4 +7,8 @@ get '/' do
   erb :index
 end
 
+get '/googlecharts' do 
+  erb :googlecharts
+end
+
 
