@@ -8,36 +8,39 @@
 
       function drawChart() {
 
-        function drawChart() {
-
         var jsonData = $.ajax({
-          url: "json/google_gauge_format_data.json",
+          url: "json/google_corecharts_format_data.json",
           dataType:"json",
           async: false
           }).responseText;
               
         // Create our data table out of JSON data loaded from server.
-        var data = new google.visualization.arrayToDataTable(jsonData);
-
-        var dataTrue = google.visualization.arrayToDataTable([
+     
+        var data = google.visualization.arrayToDataTable([
           ['Label', 'Value'],
-          ["Department A", 30],
-          ["Department B", 40],
-          ["Department C", 50],
-          ["Department D", 10],
-          ["Department E", 50],
-          ["Department F", 50],
-          ["Department G", 25],
-          ["Department H", 10]
+          ["Department A", 0],
+          ["Department B", 0],
+          ["Department C", 0],
+          ["Department D", 0],
+          ["Department E", 0],
+          ["Department F", 0],
+          ["Department G", 0],
+          ["Department H", 0],
+          ["Department G", 0],
+          ["Department H", 0]
         ]);
 
+        var dataTrue = new google.visualization.DataTable(jsonData);
+
         var options = {
+          max: 400000000,
+          min: 0,
           width: 1200, height: 500,
-          redFrom: 90, redTo: 100,
-          yellowFrom:75, yellowTo: 90,
-          minorTicks: 5,
+          redFrom: 300000000, redTo: 400000000,
+          yellowFrom:200000000, yellowTo: 300000000,
+          minorTicks: 4,
           animation:{
-            duration: 2000,
+            duration: 10000,
             easing: 'linear',
            }
         };
@@ -48,7 +51,7 @@
 
         setInterval(function() {
           chart.draw(dataTrue, options);
-        }, 10000);
+        }, 5000);
       }
      </script>
 
