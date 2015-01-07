@@ -120,22 +120,6 @@ departments.append("circle")
   .attr("cx", function(d, i) {return (chartWidth / 3.8 * Math.cos(i* theta));})
   .attr("cy", function(d, i) {return (chartWidth / 3.8 * Math.sin(i* theta));})
 
-var subdepartments = departments.append("g")
-  .attr("x", 0)
-  .attr("y", 0);
-
-
-subdepartments.append("circle")
-  .attr("class", function(d) {return d.subdept.name})
-    .attr("r", function(d) {return d.subdept.spend})
-    .attr("cx", 0)
-    .attr("cy", 0);
-
-// subdepartments.append("text")
-//   .attr("x", function(d, i) {return (chartHeight / 8 * Math.cos(i* theta));})
-//   .attr("y", function(d, i) {return (chartHeight / 8 * Math.sin(i* theta));})
-//   .text(function(d) { return d.subdept.name});
-
 departments.append("text")
   .attr("x", function(d, i) {return (chartHeight / 3.8 * Math.cos(i* theta));})
   .attr("y", function(d, i) {return (chartHeight / 3.8 * Math.sin(i* theta));})
