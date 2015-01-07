@@ -62,6 +62,14 @@
           ["Department H", 0]
         ]);
 
+    var json = $.get('/json/simple.json').always(function(response) {
+console.log(response.responseText);
+$('.content').append(response.responseText);
+
+});
+
+
+
         var dataTrue = google.visualization.arrayToDataTable([
           ['Label', 'Value'],
           ["Department A", 30],
@@ -101,3 +109,5 @@
 
 
    <div id="gauge" style="width: 1200px; height: 500px;"></div>
+
+   <div class="content">contetn div</div>
