@@ -1,0 +1,11 @@
+.chart #circles .circle circle {
+  stroke: #ffffff;
+  fill: #06c377;
+}
+
+.chart #circles text {
+  font-family: Helvetica;
+  color: #06c377;
+  stroke: none;
+  text-transform: uppercase;
+}
