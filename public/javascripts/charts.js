@@ -69,10 +69,7 @@
     var w = 0.5*(Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
     var h = 0.5*(Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
     // Set chart options
-    var options = {'title':'How Much Government Departments Spend',
-    'width':w,
-    'height':h
-  };
+    var options = {'width':w,'height':h, 'chartArea': {'top': 0}};
 
   // Instantiate and draw our chart, passing in some options.
   var chart = new google.visualization.BarChart(document.getElementById('bar_chart'));
@@ -95,10 +92,7 @@
     var w = 0.5*(Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
     var h = 0.5*(Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
     // Set chart options
-    var options = {'title':'How Much Government Departments Spend',
-    'width':w,
-    'height':h,
-    'is3D':true};
+    var options = {'width':w,'height':h,'is3D':true, 'chartArea': {'left': 0, 'top': 0} };
 
     // Instantiate and draw our chart, passing in some options.
     var chart = new google.visualization.PieChart(document.getElementById('pie_chart'));
@@ -110,40 +104,28 @@
 
   function drawChart() {
 
-    var jsonData = $.ajax({
-      url: "json/google_corecharts_format_data.json",
-      dataType:"json",
-      async: false
-    }).responseText;
-
     // Create our data table out of JSON data loaded from server.
 
-    var data = google.visualization.arrayToDataTable([
-      ['Label', 'Value'],
-      ["Department A", 0],
-      ["Department B", 0],
-      ["Department C", 0],
-      ["Department D", 0],
-      ["Department E", 0],
-      ["Department F", 0],
-      ["Department G", 0],
-      ["Department H", 0],
-      ["Department G", 0],
-      ["Department H", 0]
+      var dataTrue = google.visualization.arrayToDataTable([
+          ['Label', 'Value'],
+          ['Work (m)', 382]
+          ]);
+
+      var data = google.visualization.arrayToDataTable([
+        ['Label', 'Value'],
+        ["Work (m)", 0]
       ]);
 
-      var dataTrue = new google.visualization.DataTable(jsonData);
-
       var options = {
-        max: 400000000,
+        max: 400,
         min: 0,
-        width: 1200, height: 500,
-        redFrom: 300000000, redTo: 400000000,
-        yellowFrom:200000000, yellowTo: 300000000,
+        width: 350, height: 350,
+        redFrom: 300, redTo: 400,
+        yellowFrom:200, yellowTo: 300,
         minorTicks: 4,
         animation:{
           duration: 10000,
-          easing: 'linear',
+          easing: 'inAndOut',
         }
       };
 
@@ -153,5 +135,6 @@
 
       setInterval(function() {
         chart.draw(dataTrue, options);
-      }, 5000);
+      }, 10000);
+
     }
