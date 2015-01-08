@@ -14,6 +14,7 @@ TO DO
 >>> john data as api
 >>> structure bit of a talk, reference gist
 >>> vertical centering
+>>> "about" drop down
 
 
 
