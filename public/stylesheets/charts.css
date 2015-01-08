@@ -5,6 +5,7 @@ body {
 .chart #circles .circle circle {
   stroke: #ffffff;
   fill: #c75a01;
+  fill-opacity: 1;
 }
 
 .chart #circles text {
@@ -21,4 +22,11 @@ body {
 #total circle {
   stroke: #ffffff;
   fill: #c67203;
+  fill-opacity: 1;
+}
+
+.chart #circles .circle circle circle {
+  stroke: #ffffff;
+  fill: #0086c9;
+  fill-opacity: 1;
 }
