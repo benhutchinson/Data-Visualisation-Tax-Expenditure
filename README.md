@@ -28,19 +28,43 @@ There are plenty of examples on the D3.js web-site, but we thought the following
 
 ###Lessons Learned
 
+* Data & formats.  Google charts need to be fed data in a specific format, either hardcoded in this format into the Javascript or pre-formatted in an external JSON file.  This took us time, but we learned how to feed Google data from this and hence were able to use one JSON file as the base for a number of chart views.  Equally, some libraries struggle with negative values such as pie charts.  We learnt that working with external data libraries and external charting engines is not always a plug-and-play experience.  Time spent analysing the data requirements on both sides at the outset can be well-spent.
 
-* d3 ; struggled with negative on one library.  hence scope of project morphs to those that have net expenditure at aggregate level.................
-* google gauge: All code and data are processed and rendered in the browser. No data is sent to any server.
-wouldn't handle json
---- google gauge call-back. managed to fix arrayData vs google data reqs.
+```javascript
+        var jsonData = $.ajax({
+          url: "json/google_corecharts_format_data.json",
+          dataType:"json",
+          async: false
+          }).responseText;
+              
+        // Create our data table out of JSON data loaded from server.
+        var data = new google.visualization.DataTable(jsonData);
+```
+
+```javascript
+
+{
+  "cols": [
+        {"id":"","label":"Department","pattern":"","type":"string"},
+        {"id":"","label":"Expense","pattern":"","type":"number"}
+      ],
+  "rows": [
+        {"c":[{"v":"Welsh Assembly Government","f":null},{"v":33120744,"f":null}]},
+        {"c":[{"v":"Department for Work and Pensions","f":null},{"v":380442986,"f":null}]}
+}
+
+```
 
 * Initiative.  There was a lot of data available from [data.gov.uk](http://data.gov.uk) and in a short-project, a lot of time can be easily wasted without direction.  Chris on our team contacted  Camille Baldock from gov.uk](https://github.com/camilleldn) who gave us a talk and she pointed us towards gist.  Ideas & initiative are worth their weight in gold.
 
 ![Camille's Help](https://github.com/benhutchinson/tax-visual/blob/master/public/images/camille.png)
 
 * How much new technology do you need to absorb?  The core of this project involved learning about data visualisation technologies and we just needed to link data to javascript via a simple view.  Time was wasted appraising new frameworks that offered little beyond what we already knew, struggling to integrate them, and alienating half the team.
-* Schoolboy errors.  Even small inefficiencies such as team members coming in at different times cost us a lot of dead time.  
+
+* Schoolboy errors.  Even small inefficiencies such as team members coming in at different times cost us a lot of dead time. 
+
+* MVP.  It is always worth trying to learn to walk before you run. Google Charts seemed to meet our MVP needs quicker than D3, even if D3 arguably offers more creative and interesting solutions for the longer-term.
 
 ###Libraries
-* [D3.js](http://d3js.org)
 * [Google Charts](https://developers.google.com/chart/interactive/docs/gallery)
+* [D3.js](http://d3js.org)
