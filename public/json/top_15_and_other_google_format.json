@@ -1,0 +1,24 @@
+{
+  "cols": [
+  {"id":"","label":"Department","pattern":"","type":"string"},
+  {"id":"","label":"Expense","pattern":"","type":"number"}
+  ],
+  "rows": [
+  {"c":[{"v":"Department for Transport","f":null},{"v":23493639,"f":null}]},
+  {"c":[{"v":"Department for Business Innovation and Skills","f":null},{"v":63735012,"f":null}]},
+  {"c":[{"v":"Department for Communities and Local Government","f":null},{"v":72641243,"f":null}]},
+  {"c":[{"v":"Welsh Assembly Government","f":null},{"v":33251965,"f":null}]},
+  {"c":[{"v":"Teachers' Pension Scheme (England and Wales)","f":null},{"v":23979670,"f":null}]},
+  {"c":[{"v":"Department for Work and Pensions","f":null},{"v":381696407,"f":null}]},
+  {"c":[{"v":"Department of Health","f":null},{"v":254594409,"f":null}]},
+  {"c":[{"v":"HM Revenue and Customs","f":null},{"v":105838566,"f":null}]},
+  {"c":[{"v":"Home Office","f":null},{"v":25807862,"f":null}]},
+  {"c":[{"v":"Scottish Government","f":null},{"v":73984853,"f":null}]},
+  {"c":[{"v":"Ministry of Defence","f":null},{"v":89091296,"f":null}]},
+  {"c":[{"v":"Northern Ireland Executive","f":null},{"v":42817375,"f":null}]},
+  {"c":[{"v":"Cabinet Office: Civil Superannuation","f":null},{"v":18760129,"f":null}]},
+  {"c":[{"v":"National Health Service Pension Scheme","f":null},{"v":31676341,"f":null}]},
+  {"c":[{"v":"Department for Education","f":null},{"v":125625223,"f":null}]},
+  {"c":[{"v":"Other","f":null},{"v":82627984,"f":null}]}
+  ]
+}
