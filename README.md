@@ -78,7 +78,7 @@ Allowing users to share images individually with Twitter is possible via "Twitte
 
 * Initiative.  There was a lot of data available from [data.gov.uk](http://data.gov.uk) and in a short-project, a lot of time can be easily wasted without direction.  Chris on our team contacted  Camille Baldock from gov.uk](https://github.com/camilleldn) who gave us a talk and she pointed us towards gist.  Ideas & initiative are worth their weight in gold.
 
-...<img src="https://github.com/benhutchinson/tax-visual/blob/master/public/images/camille.png" align="center" style="display: block" width="500px" height="249px"/>
+   <img src="https://github.com/benhutchinson/tax-visual/blob/master/public/images/camille.png" align="center" style="display: block" width="500px" height="249px"/>
 <br />
 
 
