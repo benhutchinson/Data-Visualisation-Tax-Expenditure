@@ -5,8 +5,7 @@ We were set a data visualisation challenge with the aim to provide a visual repr
 
 
 ###The Data
-The government has been starting to publish data according to a new reporting system called OSCAR, an "Online System for Central Accounting and Reporting".  This is a cross-government project that we were kindly pointed towards by [Camille Baldock from gov.uk](https://github.com/camilleldn)
-that aims to simplify government data for public reporting.  The data-set is the basis of the Cabinet Office web-site visualisations above, so we have used the [open CSV data as the basis for our project.](http://www.gist.cabinetoffice.gov.uk/oscar/2013-14/)
+The government has been starting to publish data according to a new reporting system called OSCAR, an "Online System for Central Accounting and Reporting".  This is a cross-government project that we were kindly pointed towards by [Camille Baldock from gov.uk](https://github.com/camilleldn) that aims to simplify government data for public reporting.  The data-set is the basis of the Cabinet Office web-site visualisations above, so we have used the [open CSV data as the basis for our project.](http://www.gist.cabinetoffice.gov.uk/oscar/2013-14/)
 
 
 ###Roadmap & Plan
