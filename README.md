@@ -28,7 +28,9 @@ There are plenty of examples on the D3.js web-site, but we thought the following
 ###Twitter Card Integration
 Allowing users to share images individually with Twitter is possible via "Twitter Cards" but we initially struggled to align this to our individual charts due to the way Google Charts embeds and computers the charts on the page.  As a result, we learnt how to align a more generic image to tweets that users share which would more effectively brand our content when our web page is promoted.
 
-![Twitter Card Integration](https://github.com/benhutchinson/tax-visual/blob/master/public/images/sampletweetcard.png)
+
+<img src="https://github.com/benhutchinson/tax-visual/blob/master/public/images/sampletweetcard.png" align="center" style="display: block" width="360px" height="359px"/>
+<br />
 
 
 ###Lessons Learned
