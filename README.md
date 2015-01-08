@@ -68,3 +68,6 @@ There are plenty of examples on the D3.js web-site, but we thought the following
 ###Libraries
 * [Google Charts](https://developers.google.com/chart/interactive/docs/gallery)
 * [D3.js](http://d3js.org)
+
+###Code Climate
+[![Code Climate](https://codeclimate.com/repos/54ae4c17695680468b0074ca/badges/54d6e436928948043908/gpa.svg)](https://codeclimate.com/repos/54ae4c17695680468b0074ca/feed)
