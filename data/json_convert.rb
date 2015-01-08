@@ -1,6 +1,6 @@
 require 'json'
 
-string = File.open('2simple.json').read
+string = File.open('simple.json').read
 
 jsn = JSON.parse(string)
 
@@ -14,9 +14,11 @@ foot = "]
 }"
 
 rows = []
+count = 0
 
 jsn.each do |i|
-  if i["spend"] > 0
+  if i["spend"].to_i > 32051960
+    count += 1
     rows << "{\"c\":[{\"v\":\"#{i["department"]}\",\"f\":null},{\"v\":#{i["spend"]},\"f\":null}]}" + ','
   end 
 end
@@ -24,3 +26,5 @@ end
 puts head
 puts rows
 puts foot
+
+# puts count
