@@ -1,11 +1,17 @@
 header {
   border-bottom: 1px solid #313131;
   color: #313131;
+  height: 100px; 
 }
 
 h1 {
   margin-bottom: 0;
   padding: 10px 0;
+}
+
+h1#site-name {
+  display: inline;
+  float: left; 
 }
 
 #content {
@@ -21,6 +27,20 @@ h1 {
 .navbar-item {
   display: inline-block;
   margin-right: 40px;
+}
+
+#tweet-image {
+  width: 50px;
+  height: 50px; 
+  -webkit-filter: brightness(120%) invert(100%) grayscale(100%);
+  opacity: 1;
+  float: right;
+  display: inline;
+  margin-top: 20px; 
+}
+
+#tweet-image:hover {
+  -webkit-filter: brightness(100%) invert(0%) grayscale(0%);
 }
 
 .four {
