@@ -64,7 +64,9 @@ Allowing users to share images individually with Twitter is possible via "Twitte
 
 * Initiative.  There was a lot of data available from [data.gov.uk](http://data.gov.uk) and in a short-project, a lot of time can be easily wasted without direction.  Chris on our team contacted  Camille Baldock from gov.uk](https://github.com/camilleldn) who gave us a talk and she pointed us towards gist.  Ideas & initiative are worth their weight in gold.
 
-![Camille's Help](https://github.com/benhutchinson/tax-visual/blob/master/public/images/camille.png)
+<img src="https://github.com/benhutchinson/tax-visual/blob/master/public/images/camille.png" align="center" style="display: block" width="400px" height="199px"/>
+<br />
+
 
 * How much new technology do you need to absorb?  The core of this project involved learning about data visualisation technologies and we just needed to link data to javascript via a simple view.  Time was wasted appraising new frameworks that offered little beyond what we already knew, struggling to integrate them, and alienating half the team.
 
