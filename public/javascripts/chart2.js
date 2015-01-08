@@ -44,6 +44,8 @@ $( document ).ready(function() {
 	];
 
 
+	var totalSpending = 0,
+		radi = 0;
 
 	var chartWidth = parseInt(d3.select(".chart").style("width"));
 	var chartHeight = parseInt(d3.select(".chart").style("height"));
@@ -51,22 +53,29 @@ $( document ).ready(function() {
 	var chart = d3.select('.chart')
 		.style({'stroke': 'black', 'stroke-width': '2', 'width': '100%', 'height': '100%'})
 		.attr('width','100%')
-		.append('g')
+		.append('g');
+
+	spendingData.forEach(function(element){
+		totalSpending += element['spend'];
+	});
+
+	radi = 8 * Math.log(totalSpending);
 
 	var circle = d3.select('.chart g')
 		.append('circle')
 			.attr('id','circles')
-			.attr("r","100")
+			// .attr("r","100")
+			.attr("r", function(){ return parseInt(radi); })
 			.attr("cx",560)
 			.attr("cy",320)
-			.style('fill','none')
+			.style('fill','none');
 
 	var text = d3.select('.chart g')
 		.append('text')
-		.text('Return Spending')
-			.attr("x", 560)
+		.text('Total Spending')
+			.attr("x", 515)
 			.attr('y', 330)
-			.style('font-family','sans-serif')
+			.style('font-family','sans-serif');
 
 
 });
