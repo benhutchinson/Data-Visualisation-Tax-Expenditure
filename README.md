@@ -5,6 +5,7 @@ We were set a data visualisation challenge with the aim to provide a visual repr
 
 
 TO DO 
+>>> have set an index2 with vertical headings
 >>> tests
 >>> responsive re google charts.
 >>> design: e.g. one nav vs 3 lines, vertical alignment, the gauge on reveal
@@ -53,14 +54,14 @@ Allowing users to share images individually with Twitter is possible via "Twitte
    
 
 ```javascript
-        var jsonData = $.ajax({
-          url: "json/google_corecharts_format_data.json",
-          dataType:"json",
-          async: false
-          }).responseText;
-              
-        // Create our data table out of JSON data loaded from server.
-        var data = new google.visualization.DataTable(jsonData);
+  var jsonData = $.ajax({
+    url: "json/google_corecharts_format_data.json",
+    dataType:"json",
+    async: false
+    }).responseText;
+        
+  // Create our data table out of JSON data loaded from server.
+  var data = new google.visualization.DataTable(jsonData);
 ```
 
 
