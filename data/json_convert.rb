@@ -17,7 +17,7 @@ rows = []
 count = 0
 
 jsn.each do |i|
-  if i["spend"].to_i > 32051960
+  if i["spend"].to_i > 12000000
     count += 1
     rows << "{\"c\":[{\"v\":\"#{i["department"]}\",\"f\":null},{\"v\":#{i["spend"]},\"f\":null}]}" + ','
   end 
