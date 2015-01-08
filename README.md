@@ -1,7 +1,7 @@
 Tax-Data-Visualization
 ======================
 
-We were set a data visualisation challenge with the aim to provide a visual representation of UK public spending data for tax payers.  HM Treasury freely provides a quarterly breakdown of financial expenditure, aggregating expenditure across departments.  We decided to take advantage of this dataset and see if we could extend the data visualisation examples that the government provides on the [Cabinet Office web-site.](http://www.gist.cabinetoffice.gov.uk/oscar/2013-14/).  We have chosen to take advantage of charting libraries such as D3.js in this project.
+We were set a data visualisation challenge with the aim to provide a visual representation of UK public spending data for tax payers.  HM Treasury freely provides a quarterly breakdown of financial expenditure, aggregating expenditure across departments.  We decided to take advantage of this dataset and see if we could extend the data visualisation examples that the government provides on the [Cabinet Office web-site.](http://www.gist.cabinetoffice.gov.uk/oscar/2013-14/)  We have chosen to take advantage of charting libraries such as Google Charts and D3.js in this project.  Our project is [hosted here on Heroku.](https://taxvisuals.herokuapp.com/)
 
 
 ###The Data
