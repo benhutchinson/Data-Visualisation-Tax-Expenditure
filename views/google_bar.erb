@@ -1,5 +1,5 @@
 <meta name="twitter:card" content="photo" />
-<meta name="twitter:site" content="@flickr" />
+<meta name="twitter:site" content="@radebelufc" />
 <meta name="twitter:title" content="Makers Academy : Data Visualisation Project" />
 <meta name="twitter:image" content="https://taxvisuals.herokuapp.com/images/camille.png" />
 <meta name="twitter:url" content="http://taxvisuals.herokuapp.com" />
@@ -46,6 +46,8 @@
       });
 
       chart.draw(data, options);
+
+      document.getElementById('png').outerHTML = '<a href="' + chart.getImageURI() + '">Printable version</a>';
 
       }
     </script>
