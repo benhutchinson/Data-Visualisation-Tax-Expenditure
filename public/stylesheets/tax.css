@@ -1,0 +1,41 @@
+header {
+  border-bottom: 1px solid #313131;
+  color: #313131;
+}
+
+h1 {
+  margin-bottom: 0;
+  padding: 10px 0;
+}
+
+#content {
+  padding: 20px 0;
+}
+
+.navbar-list {
+  list-style: none;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.navbar-item {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.four {
+  border: 1px solid #494949;
+}
+
+.chart {
+  height: 100px;
+  transition: all 2s;
+  overflow: hidden;
+}
+
+.full-chart {
+  width: 100% !important;
+  height: 500px;
+  margin-left: 0;
+  transition: all 2s;
+}
