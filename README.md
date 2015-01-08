@@ -25,6 +25,12 @@ There are plenty of examples on the D3.js web-site, but we thought the following
 * [How many ways could we group and colour data?](http://tomsisk.com/ondemand/)
 
 
+###Twitter Card Integration
+Allowing users to share images individually with Twitter is possible via "Twitter Cards" but we initially struggled to align this to our individual charts due to the way Google Charts embeds and computers the charts on the page.  As a result, we learnt how to align a more generic image to tweets that users share which would more effectively brand our content when our web page is promoted.
+
+![Twitter Card Integration](https://github.com/benhutchinson/tax-visual/blob/master/public/images/sampletweetcard.png)
+
+
 ###Lessons Learned
 
 * Data & formats.  Google charts need to be fed data in a specific format, either hardcoded in this format into the Javascript or pre-formatted in an external JSON file.  This took us time, but we learned how to feed Google data from this and hence were able to use one JSON file as the base for a number of chart views.  Equally, some libraries struggle with negative values such as pie charts.  We learnt that working with external data libraries and external charting engines is not always a plug-and-play experience.  Time spent analysing the data requirements on both sides at the outset can be well-spent.
