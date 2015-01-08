@@ -70,13 +70,13 @@ var y = d3.scale.linear()
 
 var totalSpend = d3.select("#circles")
   .append("g")
-  .attr("id", "total");
+  .attr("id", "total"); //totalSpend = <g id=total></g>
 
 totalSpend.append("circle")
   .attr("r", function() {return (Math.sqrt(total) * (chartWidth * 0.0025));})
   .attr("cx", function() {return (chartWidth / 2);})
   .attr("cy", function() {return (chartHeight /2 );})
-  .attr("id", "totalSpend");
+  .attr("id", "totalSpend"); //totalSpend still points to <g> but with circle inside
 
 var departments = chart.selectAll("g")
   .data(data)
@@ -96,6 +96,8 @@ departments.append("text")
   .attr("x", function(d, i) {return (chartHeight / 3.8 * Math.cos(i* theta));})
   .attr("y", function(d, i) {return (chartHeight / 3.8 * Math.sin(i* theta));})
   .text(function(d) { return d.name})
+
+  
 
 
 });
