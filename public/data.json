@@ -1,0 +1,78 @@
+{
+    {
+      name: "Department A",
+      spend: 30,
+      subdept: {
+        name: "Department A1",
+        spend: 28
+      },
+      subdept: {
+        name: "Department A1",
+        spend: 28
+      }
+    },
+    {
+      name: "Department B",
+      spend: 40,
+      subdept: {
+        name: "Department B1",
+        spend: 32
+      }
+    },
+    {
+      name: "Department C",
+      spend: 50,
+      subdept: {
+        name: "Department C1",
+        spend: 50
+      }
+    },
+    {
+      name: "Department D",
+      spend: 10,
+      subdept: {
+        name: "Department D1",
+        spend: 3
+      }
+    },
+    {
+      name: "Department E",
+      spend: 50,
+      subdept: {
+        name: "Department E1",
+        spend: 45
+      }
+    },
+    {
+      name: "Department F",
+      spend: 50,
+      subdept: {
+        name: "Department F1",
+        spend: 40
+      }
+    },
+    {
+      name: "Department G",
+      spend: 25,
+      subdept: {
+        name: "Department G1",
+        spend: 20
+      }
+    },
+    {
+      name: "Environment",
+      spend: 10,
+      subdept: {
+        name: "Department H1",
+        spend: 8
+      }
+    },
+    {
+      name: "Department I",
+      spend: 10,
+      subdept: {
+        name: "Department I1",
+        spend: 5
+      }
+    }
+  }

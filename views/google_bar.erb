@@ -1,3 +1,5 @@
+
+
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
 <script type="text/javascript">
@@ -25,14 +27,26 @@
         // Set chart options
         var options = {'title':'How Much Government Departments Spend',
                        'width':w,
-                       'height':h
-                     };
+                       'height':h};
 
         // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
+      var chart_div = document.getElementById('chart_div');
+      var chart = new google.visualization.BarChart(chart_div);
+
+      // Wait for the chart to finish drawing before calling the getImageURI() method.
+      google.visualization.events.addListener(chart, 'ready', function () {
+        chart_div.innerHTML = '<img src="' + chart.getImageURI() + '">';
+        console.log(chart_div.innerHTML);
+      });
+
+      chart.draw(data, options);
+
+      document.getElementById('png').outerHTML = '<a href="' + chart.getImageURI() + '">Printable version</a>';
+
       }
     </script>
 
 
    <div id="chart_div"></div>
+
+ <div id='png'></div>

@@ -1,0 +1,163 @@
+header {
+  border-bottom: 1px solid #313131;
+  color: #313131;
+  height: 100px; 
+  width: 100%; 
+  background-color: white;
+  position: fixed;
+  z-index: 10;
+  margin-top: -100px; 
+}
+
+h1 {
+  margin-bottom: 0;
+  padding: 20px 0;
+}
+
+h1#site-name {
+  display: inline;
+  float: left; 
+}
+
+h4 {
+  margin-bottom: 30px; 
+}
+
+#content {
+  margin-top: 100px; 
+  padding: 30px 0;
+}
+
+.navbar-list {
+  list-style: none;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.navbar-item {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+#tweet-image {
+  width: 50px;
+  height: 50px; 
+  -webkit-filter: brightness(120%) invert(100%) grayscale(100%);
+  opacity: 1;
+  float: right;
+  display: inline;
+  margin-top: 20px; 
+}
+
+#tweet-image:hover {
+  -webkit-filter: brightness(100%) invert(0%) grayscale(0%);
+}
+
+.four {
+  border: 1px solid #494949;
+}
+
+.chart {
+  height: 50px;
+  transition: all 2s;
+  overflow: hidden;
+}
+
+.full-chart {
+  width: 100% !important;
+  height: 400px;
+  margin-left: 0;
+  transition: all 2s;
+}
+
+#pie-link {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+#pie-link:hover {
+  opacity: 0.9;
+}
+
+#bar-link {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+#bar-link:hover {
+  opacity: 0.9;
+}
+
+#gauge-link {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+#gauge-link:hover {
+  opacity: 0.9;
+}
+
+#pie_chart {
+  display: none;
+}
+
+#bar_chart {
+  display: none;
+}
+
+#gauge_chart {
+  display: none;
+}
+
+#top-10 {
+  cursor: pointer;
+}
+
+#top-20 {
+  cursor: pointer;
+}
+
+#top-10:hover {
+  opacity: 0.5;
+}
+
+#top-20:hover {
+  opacity: 0.5; 
+}
+
+#core-logo {
+  height: calc(100% - 100px);
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  overflow: hidden;
+  /*width: 300px;*/
+  /*transform-origin: left;*/
+  /*-webkit-animation: move 20s ease-in-out infinite alternate;*/
+  z-index: 0;
+}
+
+#logoline {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.25px;
+  opacity: 0.3;
+  /*z-index: 0;*/
+}
+
+@-webkit-keyframes move {
+    0% {left: 0px;}
+    100% {left: -100%; opacity: 0.85;}
+}
+
+/*#logo-2 {
+  height: calc(100% - 25px);
+  display: inline-block;
+  position: absolute;
+  top: -7px;
+  left: 0px;
+  overflow: hidden;
+  -webkit-animation: move 7s ease-in-out 2s infinite alternate; 
+  opacity: 0.7;
+}*/
