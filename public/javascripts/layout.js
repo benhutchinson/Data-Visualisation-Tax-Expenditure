@@ -5,7 +5,8 @@ $( document ).ready(function() {
   //     $(this).toggleClass("chart")
   //   })
   // });
-
+  drawBarChart('json/google_corecharts_format_data.json');
+  drawPieChart('json/google_corecharts_format_data.json');
 
   $("#pie-link").on("click", function() {
 	  	$("#pie_chart").css({"display":"block"});
@@ -25,5 +26,14 @@ $( document ).ready(function() {
 	    $("#gauge_chart").show();
 	});
 
+  $("#top-10").on("click", function(){
+    drawBarChart('json/google_corecharts_format_data.json');
+    drawPieChart('json/google_corecharts_format_data.json');
+  });
+
+  $("#top-20").on("click", function(){
+    drawBarChart('json/top_15_and_other_google_format.json');
+    drawPieChart('json/top_15_and_other_google_format.json');
+  });
 
 });
