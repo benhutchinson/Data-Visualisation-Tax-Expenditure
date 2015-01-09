@@ -1,9 +1,0 @@
-{
-  "cols": [
-  {"id":"","label":"Department","pattern":"","type":"string"},
-  {"id":"","label":"Expense","pattern":"","type":"number"}
-  ],
-  "rows": [
-  
-    ]
-}
