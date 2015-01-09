@@ -44,6 +44,8 @@ $( document ).ready(function() {
 	];
 
 
+
+//Setting up the Chart
 	var totalSpending = 0,
 		radi = 0;
 
@@ -59,6 +61,8 @@ $( document ).ready(function() {
 		totalSpending += element['spend'];
 	});
 
+
+//Setting up the total spending Circle	
 	radi = 8 * Math.log(totalSpending);
 
 	var circle = d3.select('.chart g')
@@ -76,6 +80,29 @@ $( document ).ready(function() {
 			.attr("x", 515)
 			.attr('y', 330)
 			.style('font-family','sans-serif');
+
+
+
+
+//Setting up departmental spending Circles	
+	var departmentCircles = d3.select('.chart').append('g')
+		.selectAll('circle')
+		.data(spendingData)
+		.enter()
+		.append('circle')
+		.attr('')
+
+	d3.selectAll
+
+
+	console.log(departmentCircles);
+
+
+
+
+
+
+
 
 
 });

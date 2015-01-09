@@ -1,0 +1,40 @@
+.bar {
+	fill: steelblue;
+}
+
+.bar:hover {
+	fill: brown;
+}
+
+/*.axis text {
+	font: 12px sans-serif;
+	transform: rotate(45deg);
+	transform-origin: 0 0;
+}*/
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+x .axis path {
+	display: none;
+}			"spend":73984853
+
+
+/*.chart rect {
+	fill: steelblue;
+}
+
+.chart text {
+	fill: white;
+	font: 10px sans-serif;
+}
+
+.chart text {
+	fill: white;
+	font: 10px sans-serif;
+	text-anchor: middle;
+}*/
