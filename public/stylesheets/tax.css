@@ -1,3 +1,9 @@
+/*@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Thin.ttf') format('truetype');
+    font-style: normal;
+}*/
+
 header {
   border-bottom: 1px solid #313131;
   color: #313131;

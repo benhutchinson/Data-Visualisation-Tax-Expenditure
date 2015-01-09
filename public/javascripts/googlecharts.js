@@ -76,8 +76,8 @@ function drawChart() {
     max: 200,
     min: 0,
     width: 350, height: 350,
-    redFrom: 160, redTo: 180,
-    yellowFrom:180, yellowTo: 200,
+    redFrom: 180, redTo: 200,
+    yellowFrom:160, yellowTo:180,
     minorTicks: 4,
     animation:{
       duration: 10000,
