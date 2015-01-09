@@ -19,7 +19,7 @@ function drawBarChart(chosen_url) {
   var w = 0.5*(Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
   var h = 0.5*(Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
   // Set chart options
-  var options = {'width':w,'height':h, 'hAxis': {'title': "£m", 'titleTextStyle':{'italic': false}}, 'vAxis': {'textPosition' : 'in', 'textStyle': {'fontSize': 12}}, 'orientation': 'vertical', 'legend': { position: 'none' }, 'chartArea': {'top': 0, 'left': 4}};
+  var options = {'width':w,'height':h, 'hAxis': {'title': "£m", 'titleTextStyle':{'italic': false}}, 'vAxis': {'textPosition' : 'in', 'textStyle': {'fontSize': 12}}, 'orientation': 'vertical', 'legend': { position: 'none' }, 'chartArea': {'top': 0, 'left': 24}};
 
   // Instantiate and draw our chart, passing in some options.
   var chart = new google.visualization.BarChart(document.getElementById('bar_chart'));
@@ -91,6 +91,6 @@ function drawChart() {
 
   setInterval(function() {
     chart.draw(dataTrue, options);
-  }, 10000);
+  }, 2000);
 
 }

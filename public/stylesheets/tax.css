@@ -1,8 +1,14 @@
-/*@font-face {
+@font-face {
     font-family: 'Raleway';
-    src: url('fonts/Raleway-Thin.ttf') format('truetype');
+    src: url('../fonts/Raleway-Regular.ttf') format('truetype');
     font-style: normal;
-}*/
+}
+
+@font-face {
+    font-family: 'RalewayThin';
+    src: url('../fonts/Raleway-ExtraLight.ttf') format('truetype');
+    font-style: normal;
+}
 
 header {
   border-bottom: 1px solid #313131;
@@ -31,7 +37,7 @@ h4 {
 
 #content {
   margin-top: 100px; 
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 .navbar-list {
@@ -79,6 +85,7 @@ h4 {
 #pie-link {
   opacity: 0.6;
   cursor: pointer;
+  padding-left: 25px; 
 }
 
 #pie-link:hover {
@@ -88,6 +95,8 @@ h4 {
 #top-10 {
   opacity: 0.6;
   cursor: pointer;
+  padding-left: 25px; 
+  margin-bottom: 20px; 
 }
 
 #top-10:hover {
@@ -115,6 +124,7 @@ h4 {
 #gauge-link {
   opacity: 0.6;
   cursor: pointer;
+  font-family: 'RalewayThin';
 }
 
 #gauge-link:hover {
@@ -124,6 +134,7 @@ h4 {
 #bar-pie-link {
   opacity: 0.6;
   cursor: pointer;
+   font-family: 'RalewayThin';
 }
 
 #bar-pie-link:hover {
@@ -132,14 +143,12 @@ h4 {
 
 #pie_chart {
   display: none;
+  margin-top: 50px; 
 }
 
 #bar_chart {
   display: none;
-}
-
-#gauge_chart {
-  display: none;
+  margin-top: 50px; 
 }
 
 #top-10 {
@@ -161,6 +170,12 @@ h4 {
 #bar-pie-div {
   display: none;
   margin-top: 20px; 
+  font-family: 'RalewayThin';
+}
+
+#gauge_chart {
+  display: none;
+  margin-top: 30px; 
 }
 
 #core-logo {
