@@ -4,7 +4,7 @@ $( document ).ready(function() {
   drawPieChart('json/top_10_google_format.json');
 
   $("#bar-pie-link").on("click", function() {
-      $("#bar-pie-div").css({"display":"block"});
+      $("#bar-pie-div").slideDown(2000);
       $("#pie_chart").show();
     });
 
@@ -19,7 +19,7 @@ $( document ).ready(function() {
     });
 
 	$("#gauge-link").on("click", function() {
-	    $("#gauge_chart").css({"display":"block"});
+     $("#gauge_chart").slideDown(2000);
 	});
 
   $("#top-10").on("click", function(){
