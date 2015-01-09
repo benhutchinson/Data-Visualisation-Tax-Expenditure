@@ -1,9 +1,12 @@
 require 'json'
 
-string = File.open('api.json').read
+string = File.open('json/api.json').read
 
 jsn = JSON.parse(string)
 
-for i in jsn["top_10"]
-  puts i["department"]
+for i in jsn.keys
+  for j in jsn[i]
+    puts j["department"]
+    puts j["spend"]
+  end
 end
