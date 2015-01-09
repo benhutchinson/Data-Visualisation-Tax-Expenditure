@@ -1,0 +1,37 @@
+.chart #circles .circle circle {
+  stroke: none;
+  stroke-width: 3px;
+  fill: #ffffff;
+  fill-opacity: 1;
+}
+
+.chart #circles text {
+  font-family: Helvetica;
+  color: #06c377;
+  stroke: none;
+  text-transform: uppercase;
+}
+
+#chart-div {
+  margin-top: 10%;
+}
+
+#total circle {
+  stroke: #ffffff;
+  fill: #f2d741;
+  fill-opacity: 1;
+}
+
+.chart #circles .circle circle circle {
+  stroke: #ffffff;
+  fill: #0086c9;
+  fill-opacity: 1;
+}
+
+#legend .row circle {
+  stroke: none;
+}
+
+#legend .row text {
+  stroke: none;
+}

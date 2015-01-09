@@ -37,7 +37,7 @@ h4 {
 
 #content {
   margin-top: 100px; 
-  padding: 40px 0;
+  padding: 0px 0;
 }
 
 .navbar-list {
@@ -58,7 +58,7 @@ h4 {
   opacity: 1;
   float: right;
   display: inline;
-  margin-top: 20px; 
+  margin-top: 25px; 
 }
 
 #tweet-image:hover {
@@ -85,7 +85,6 @@ h4 {
 #pie-link {
   opacity: 0.6;
   cursor: pointer;
-  padding-left: 25px; 
 }
 
 #pie-link:hover {
@@ -95,7 +94,6 @@ h4 {
 #top-10 {
   opacity: 0.6;
   cursor: pointer;
-  padding-left: 25px; 
   margin-bottom: 20px; 
 }
 
@@ -169,25 +167,27 @@ h4 {
 
 #bar-pie-div {
   display: none;
-  margin-top: 20px; 
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-bottom: 30px;   
   font-family: 'RalewayThin';
 }
 
 #gauge_chart {
   display: none;
-  margin-top: 30px; 
+  margin-top: 70px;
+  margin-left: 200px;
+  margin-bottom: 70px;   
 }
 
 #core-logo {
-  height: calc(100% - 100px);
+  height: calc(200% - 200px);
   display: inline-block;
   position: absolute;
   left: 0px;
   top: 100px;
   overflow: hidden;
-  /*width: 300px;*/
-  /*transform-origin: left;*/
-  /*-webkit-animation: move 20s ease-in-out infinite alternate;*/
+  -webkit-animation: change 15s ease-in-out infinite alternate;
   z-index: 0;
 }
 
@@ -196,21 +196,9 @@ h4 {
   stroke: black;
   stroke-width: 0.25px;
   opacity: 0.3;
-  /*z-index: 0;*/
 }
 
-@-webkit-keyframes move {
-    0% {left: 0px;}
-    100% {left: -100%; opacity: 0.85;}
+@-webkit-keyframes change {
+    0% {opacity: 0.5; transform: scale(1.2) rotate(12deg);}
+    100% {opacity: 0.3; transform: scale(0.2) translate(-100%, -100%);}
 }
-
-/*#logo-2 {
-  height: calc(100% - 25px);
-  display: inline-block;
-  position: absolute;
-  top: -7px;
-  left: 0px;
-  overflow: hidden;
-  -webkit-animation: move 7s ease-in-out 2s infinite alternate; 
-  opacity: 0.7;
-}*/

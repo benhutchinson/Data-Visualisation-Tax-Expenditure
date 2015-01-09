@@ -3,24 +3,6 @@ Tax-Data-Visualization
 
 We were set a data visualisation challenge with the aim to provide a visual representation of UK public spending data for tax payers.  HM Treasury freely provides a quarterly breakdown of financial expenditure, aggregating expenditure across departments.  We decided to take advantage of this dataset and see if we could extend the data visualisation examples that the government provides on the [Cabinet Office web-site.](http://www.gist.cabinetoffice.gov.uk/oscar/2013-14/)  We have chosen to take advantage of charting libraries such as Google Charts and D3.js in this project.  Our project is [hosted here on Heroku.](https://taxvisuals.herokuapp.com/)
 
-
-TO DO 
->>> have set an index2 with vertical headings
->>> tests
->>> responsive re google charts.
->>> design: e.g. one nav vs 3 lines, vertical alignment, the gauge on reveal
->>> john's data option
->>> d3....
->>> data source on page
->>> john data as api
->>> structure bit of a talk, reference gist
->>> vertical centering
->>> "about" drop down
->>> https://www.whatdotheyknow.com/request/34474/response/88835/attach/3/design%20guidelines%20june%202009.pdf
-holds the UK Treasury font details
->>> vector ; https://assets.digital.cabinet-office.gov.uk/static/opengraph-image-85fc698c83c77d8d8cb5467a44cc12a5.png
-
-
 ###The Data
 The government has been starting to publish data according to a new reporting system called OSCAR, an "Online System for Central Accounting and Reporting".  This is a cross-government project that we were kindly pointed towards by [Camille Baldock from gov.uk](https://github.com/camilleldn) that aims to simplify government data for public reporting.  The data-set is the basis of the Cabinet Office web-site visualisations above, so we have used the [open CSV data as the basis for our project.](http://www.gist.cabinetoffice.gov.uk/oscar/2013-14/)
 
