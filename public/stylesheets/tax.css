@@ -79,6 +79,24 @@ h4 {
   opacity: 0.9;
 }
 
+#top-10 {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+#top-10:hover {
+  opacity: 0.9;
+}
+
+#top-20 {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+#top-20:hover {
+  opacity: 0.9;
+}
+
 #bar-link {
   opacity: 0.6;
   cursor: pointer;
@@ -94,6 +112,15 @@ h4 {
 }
 
 #gauge-link:hover {
+  opacity: 0.9;
+}
+
+#bar-pie-link {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+#bar-pie-link:hover {
   opacity: 0.9;
 }
 
@@ -123,6 +150,11 @@ h4 {
 
 #top-20:hover {
   opacity: 0.5; 
+}
+
+#bar-pie-div {
+  display: none;
+  margin-top: 20px; 
 }
 
 #core-logo {

@@ -5,8 +5,14 @@ $( document ).ready(function() {
   //     $(this).toggleClass("chart")
   //   })
   // });
-  drawBarChart('json/google_corecharts_format_data.json');
-  drawPieChart('json/google_corecharts_format_data.json');
+  drawBarChart('json/top_10_google_format.json');
+  drawPieChart('json/top_10_google_format.json');
+
+  $("#bar-pie-link").on("click", function() {
+      $("#bar-pie-div").css({"display":"block"});
+      $("#pie_chart").show();
+      $("#gauge_chart").hide();  
+    });
 
   $("#pie-link").on("click", function() {
 	  	$("#pie_chart").css({"display":"block"});
@@ -23,17 +29,18 @@ $( document ).ready(function() {
 	$("#gauge-link").on("click", function() {
 	  	$("#pie_chart").hide();
 	    $("#bar_chart").hide();
+      $("#bar-pie-div").hide();
 	    $("#gauge_chart").show();
 	});
 
   $("#top-10").on("click", function(){
-    drawBarChart('json/google_corecharts_format_data.json');
-    drawPieChart('json/google_corecharts_format_data.json');
+    drawBarChart('json/top_10_google_format.json');
+    drawPieChart('json/top_10_google_format.json');
   });
 
   $("#top-20").on("click", function(){
-    drawBarChart('json/top_15_and_other_google_format.json');
-    drawPieChart('json/top_15_and_other_google_format.json');
+    drawBarChart('json/top_15_google_format.json');
+    drawPieChart('json/top_15_google_format.json');
   });
 
 });

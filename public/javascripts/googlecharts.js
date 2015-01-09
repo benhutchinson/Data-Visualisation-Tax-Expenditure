@@ -19,7 +19,7 @@ function drawBarChart(chosen_url) {
   var w = 0.5*(Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
   var h = 0.5*(Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
   // Set chart options
-  var options = {'width':w,'height':h, 'vAxis': {'textPosition' : 'in', 'textStyle': {'fontSize': 12}}, 'orientation': 'vertical', 'legend': { position: 'none' }, 'chartArea': {'top': 0, 'left': 4}};
+  var options = {'width':w,'height':h, 'hAxis': {'title': "£m", 'titleTextStyle':{'italic': false}}, 'vAxis': {'textPosition' : 'in', 'textStyle': {'fontSize': 12}}, 'orientation': 'vertical', 'legend': { position: 'none' }, 'chartArea': {'top': 0, 'left': 4}};
 
   // Instantiate and draw our chart, passing in some options.
   var chart = new google.visualization.BarChart(document.getElementById('bar_chart'));
@@ -64,7 +64,7 @@ function drawChart() {
 
   var dataTrue = google.visualization.arrayToDataTable([
       ['Label', 'Value'],
-      ['Work (m)', 382]
+      ['Work (m)', 170.6]
       ]);
 
   var data = google.visualization.arrayToDataTable([
@@ -73,11 +73,11 @@ function drawChart() {
   ]);
 
   var options = {
-    max: 400,
+    max: 200,
     min: 0,
     width: 350, height: 350,
-    redFrom: 300, redTo: 400,
-    yellowFrom:200, yellowTo: 300,
+    redFrom: 160, redTo: 180,
+    yellowFrom:180, yellowTo: 200,
     minorTicks: 4,
     animation:{
       duration: 10000,
