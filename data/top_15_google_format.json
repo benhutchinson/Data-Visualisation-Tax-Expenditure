@@ -1,0 +1,23 @@
+{
+  "cols": [
+  {"id":"","label":"Department","pattern":"","type":"string"},
+  {"id":"","label":"Expense","pattern":"","type":"number"}
+  ],
+  "rows": [
+  {"c":[{"v":"Department for Business Innovation and Skills","f":null},{"v":32.715,"f":null}]},
+  {"c":[{"v":"Department for Communities and Local Government","f":null},{"v":33.910,"f":null}]},
+  {"c":[{"v":"Welsh Assembly Government","f":null},{"v":16.078,"f":null}]},
+  {"c":[{"v":"Department for Work and Pensions","f":null},{"v":170.579,"f":null}]},
+  {"c":[{"v":"Department of Health","f":null},{"v":115.398,"f":null}]},
+  {"c":[{"v":"HM Revenue and Customs","f":null},{"v":46.562,"f":null}]},
+  {"c":[{"v":"Scottish Government","f":null},{"v":34.739,"f":null}]},
+  {"c":[{"v":"Ministry of Defence","f":null},{"v":43.340,"f":null}]},
+  {"c":[{"v":"Northern Ireland Executive","f":null},{"v":19.849,"f":null}]},
+  {"c":[{"v":"Department for Education","f":null},{"v":56.749,"f":null}]},
+  {"c":[{"v":"Department for Transport","f":null},{"v":14.011,"f":null}]},
+  {"c":[{"v":"Teachers' Pension Scheme (England and Wales)","f":null},{"v":10.213,"f":null}]},
+  {"c":[{"v":"Home Office","f":null},{"v":12.254,"f":null}]},
+  {"c":[{"v":"Department for International Development","f":null},{"v":10.103,"f":null}]},
+  {"c":[{"v":"National Health Service Pension Scheme","f":null},{"v":13.933,"f":null}]}
+  ]
+}
