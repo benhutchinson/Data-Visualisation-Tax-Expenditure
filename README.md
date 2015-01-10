@@ -93,11 +93,11 @@ Please note that full extracts can be found in the ```googlecharts.js``` and ```
 ###Code Extracts: Twitter Cards
 
 ``` html
-  <meta name="twitter:card" content="photo" />
-  <meta name="twitter:site" content="@gspend" />
-  <meta name="twitter:title" content="Makers Academy : Data Visualisation Project" />
-  <meta name="twitter:image" content="https://taxvisuals.herokuapp.com/images/number10.jpg" />
-  <meta name="twitter:url" content="https://taxvisuals.herokuapp.com/" />
+<meta name="twitter:card" content="photo" />
+<meta name="twitter:site" content="@gspend" />
+<meta name="twitter:title" content="Makers Academy : Data Visualisation Project" />
+<meta name="twitter:image" content="https://taxvisuals.herokuapp.com/images/number10.jpg" />
+<meta name="twitter:url" content="https://taxvisuals.herokuapp.com/" />
 ```
 
 ``` html
@@ -111,7 +111,6 @@ Please note that full extracts can be found in the ```googlecharts.js``` and ```
 
 
 * Initiative:  There was a lot of data available from [data.gov.uk](http://data.gov.uk) and in a short-project, a lot of time can be easily wasted without direction.  Chris on our team contacted [Camille Baldock from gov.uk](https://github.com/camilleldn) who gave a talk at Makers Academy and she pointed us towards the latest government initiatives and data series.  Ideas & initiative are worth their weight in gold.
-
 <img src="https://github.com/benhutchinson/tax-visual/blob/master/public/images/camille.png" align="center" style="display: block" width="500px" height="249px"/>
 <br />
 
