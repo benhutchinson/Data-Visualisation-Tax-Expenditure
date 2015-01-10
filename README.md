@@ -25,7 +25,7 @@ The illustrations through these links also illustrate how we might take our proj
 * [New York Times: Facebook IPO: Dynamic y-axis transformations.](http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html)
 * [New York Times: Obama Budget Proposal: Data grouped according to different criteria](http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html)
 * [D3 Pack Hierarchy: Zoom-in for more granular information on chosen datasets & circles](http://mbostock.github.io/d3/talk/20111116/pack-hierarchy.html)
-* [Google Charts: Gauge: A bit quirky but a nice departure from circles and charts and outside D3.js](https://google-developers.appspot.com/chart/interactive/docs/gallery/gauge)
+* [Google Charts: Gauge: Quirky but a nice departure from circles and charts and outside D3.js](https://google-developers.appspot.com/chart/interactive/docs/gallery/gauge)
 * [How many ways could we group and colour the data we present?](http://tomsisk.com/ondemand/)
 
 
@@ -64,7 +64,7 @@ Please note that full extracts can be found in the ```googlecharts.js``` and ```
 ```
 
 
-###Code Extracts: Setting Up JSON Data In Google's DataTable Format
+###Code Extracts: JSON Data In Google's DataTable Format
 
 ```javascript
 
