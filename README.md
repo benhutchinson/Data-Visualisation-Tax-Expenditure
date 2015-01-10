@@ -17,16 +17,16 @@ Our minimal viable product aimed at providing a visual breakdown of 2013-14 UK g
 
 
 ###The Data
-The UK government has been starting to publish data according to a new reporting system called OSCAR, an "Online System for Central Accounting and Reporting".  This is a cross-government project that we were kindly pointed towards by [Camille Baldock from gov.uk](https://github.com/camilleldn) that aims to simplify government data for public reporting.  The data-set we have processed should be the same data-set that underpins the [Cabinet Office web-site visualisations](http://www.gist.cabinetoffice.gov.uk/oscar/2013-14/), [an open CSV data set.](http://www.gist.cabinetoffice.gov.uk/oscar/2013-14/)
+The UK government has been starting to publish data according to a new reporting system called OSCAR, an "Online System for Central Accounting and Reporting".  This is a cross-government project that we were kindly pointed towards by [Camille Baldock from gov.uk](https://github.com/camilleldn) that aims to simplify government data for public reporting.  The data-set we have processed should be the same data-set that underpins the [Cabinet Office web-site visualisations, an open CSV data set linked at the base of the page.](http://www.gist.cabinetoffice.gov.uk/oscar/2013-14/)
 
 
 ###Ideas & Inspiration
 The illustrations through these links also illustrate how we might take our project further with a more advanced understanding of D3.js.
 * [New York Times: Facebook IPO: Dynamic y-axis transformations.](http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html)
-* [New York Times: Obama Budget Proposal: Different visual options with data grouped according to different criteria](http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html)
-* [D3 Pack Hierarchy: Zoom-In for more granular information on chosen datasets & circles](http://mbostock.github.io/d3/talk/20111116/pack-hierarchy.html)
-* [Google Charts: Gauge: A bit quirky but a nice departure from circles and charts, and also outside D3.js](https://google-developers.appspot.com/chart/interactive/docs/gallery/gauge)
-* [How many ways could we group and colour data?](http://tomsisk.com/ondemand/)
+* [New York Times: Obama Budget Proposal: Data grouped according to different criteria](http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html)
+* [D3 Pack Hierarchy: Zoom-in for more granular information on chosen datasets & circles](http://mbostock.github.io/d3/talk/20111116/pack-hierarchy.html)
+* [Google Charts: Gauge: A bit quirky but a nice departure from circles and charts and outside D3.js](https://google-developers.appspot.com/chart/interactive/docs/gallery/gauge)
+* [How many ways could we group and colour the data we present?](http://tomsisk.com/ondemand/)
 
 
 ###Code Extracts: D3 
