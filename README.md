@@ -31,7 +31,7 @@ The illustrations through these links also illustrate how we might take our proj
 
 ###Code Extracts: D3 
 
-Please note that there is more in ```bubble-chart.js``` file with the ```public/javascripts``` folder in this repository.
+Please note that full extracts can be found in the ```bubble-chart.js``` file within the ```public/javascripts``` folder in this repository.
 
 ```
 var chart = d3.selectAll(".chart")
@@ -51,7 +51,7 @@ totalSpend.append("circle")
 
 ###Code Extracts: Linking Google Charts To Our Data
 
-Please note that there is more in ```googlecharts.js``` and ```layout.js``` files with the ```public/javascripts``` folder in this repository.
+Please note that full extracts can be found in the ```googlecharts.js``` and ```layout.js``` files with the ```public/javascripts``` folder in this repository.
 
 ```javascript
   var jsonData = $.ajax({
