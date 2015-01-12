@@ -52,7 +52,6 @@ totalSpend.append("circle")
 ###Code Extracts: Linking Google Charts To Our Data
 
 Please note that full extracts can be found in the ```googlecharts.js``` and ```layout.js``` files with the ```public/javascripts``` folder in this repository.
->>>>>>> 23e2748f1616d9701bef14c897af634714d5a2a9
 
 ```javascript
   var jsonData = $.ajax({
