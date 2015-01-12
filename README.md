@@ -34,6 +34,8 @@ Allowing users to share images individually with Twitter is possible via "Twitte
 
 ###Lessons Learned
 
+* API.  Our API currently involves serving a JSON file from a relatively static ```https://taxvisuals.herokuapp.com/json/api.json``` link.  Whilst this is fine given the relative simplicity of this project, it could be improved semantically, could be accessed through clearer URIs and effectively more closely align to RESTful principles.  For example, we could use query strings ``` /?count=10&format=google ``` to offer a neater and more consistent way of retrieving data.  Rather than clutter the controller file, an API Parser class could be defined and integrated with the ```server.rb``` controller to help us serve the applicable JSON file in response to the URI parameters.  
+
 * Data & formats.  Google charts need to be fed data in a specific format, either hardcoded in this format into the Javascript or pre-formatted in an external JSON file.  This took us time, but we learned how to feed Google data from this and hence were able to use one JSON file as the base for a number of chart views.  Equally, some libraries struggle with negative values such as pie charts.  We learnt that working with external data libraries and external charting engines is not always a plug-and-play experience.  Time spent analysing the data requirements on both sides at the outset can be well-spent.
    
 
